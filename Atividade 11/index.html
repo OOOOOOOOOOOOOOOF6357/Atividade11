@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="style.css">
+</head>
+<body>
+    <div class="boas">
+    Nome:<br>
+    <input id="nome"><br><br><br>
+    Idade:<br>
+    <input id="idade"><br><br>
+    <button onclick="ok()">OK</button>
+</div>
+
+    <script>
+        let n = document.querySelector('#nome')
+        let i = document.querySelector('#idade')
+
+
+        function ok() {
+            var alerta = `Boas vindas ${n.value}, você tem ${i.value} anos.`
+            alert(`${alerta}`)
+        }
+    </script>
+</body>
+</html>
